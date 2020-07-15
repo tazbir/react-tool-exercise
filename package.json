@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev":"npx webpack-dev-server --mode development",
+    "build":"npx webpack --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-babel":"npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react",
+    "install-webpack":"npm install --savedev webpack webpack-cli webpack-dev-server style-loader css-loader babel-loader"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +17,8 @@
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
-    "@babel/preset-react": "^7.10.4"
+    "@babel/preset-react": "^7.10.4",
+    "react-hot-loader": "^4.12.21"
   },
   "dependencies": {
     "babel-loader": "^8.1.0",
